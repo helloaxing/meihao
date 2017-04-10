@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公交方案的单边检索</title>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2">
+</script>
+</head>
+<body>
+<p>
+	<input type="text" id="myPOI" value="南开区白堤路馨达园1-1-601" />
+	<input type="button" onclick="poi_search();" value="查询地点" />
+</p>
+<div style="clear:both;"></div>
+<div style="float:left;width:520px;height:340px;border:1px solid gray" id="container"></div>
+<div style="float:left;width:520px;min-height:340px;border:1px solid gray" id="results"></div>
+</body>
+</html>
+<script type="text/javascript">
+var thisPoint;
+//查询完毕添加自定义标注
+function addMarker(point){
+    var marker = new BMap.Marker(point.point);
+    var infoWindow = new BMap.InfoWindow("<div style='line-height:1.8em;font-size:12px;'><b>名称:</b>"+point.title+"</br><b>地址:</b>"+point.address+"</br><b>电话:</b>"+point.phoneNumber+"<p style='border-top:1px dashed #44aa99'></p>从这里到<input type='text' id='point_start' value='南开区白堤路馨达园1-1-601' style='border:1px solid #aaa;background:none;' /><input type='button' onclick='bus_start();' value='公交' /></br>从<input type='text' value='南开区白堤路馨达园1-1-601' style='border:1px solid #aaa;background:none;' id='point_end' />到这里<input type='button' onclick='bus_end();' value='公交' /></div>");  // 创建信息窗口对象
+    map.addOverlay(marker);    
+    setTimeout(function(){map.centerAndZoom(point.point,14);marker.openInfoWindow(infoWindow);},500);
+}
+
+//查询完毕的回调函数
+var searchComplete = function (results){
+    if (local.getStatus() != BMAP_STATUS_SUCCESS){
+        return ;
+    }
+    var point = results.getPoi(0);    
+    thisPoint = point;
+    addMarker(point);
+}
+
+var map = new BMap.Map("container");    //创建地图容器
+map.centerAndZoom(new BMap.Point(116.404, 39.915), 10); //初始化地图
+map.enableScrollWheelZoom();  //启用滚轮缩放
+var local = new BMap.LocalSearch(map,{onSearchComplete: searchComplete});   //构造一个查询
+var transit = new BMap.TransitRoute(map, {renderOptions: {map: map, panel : "results"}});
+
+//定义三个不同的查询
+function poi_search(){
+    map.clearOverlays();
+    var POI = document.getElementById("myPOI").value;
+    local.search(POI);
+}
+function bus_start(){
+    transit.search(thisPoint , document.getElementById("point_start").value);
+}
+function bus_end(){
+    transit.search(document.getElementById("point_end").value , thisPoint);
+}
+</script>

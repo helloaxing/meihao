@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="天津美好科技有限公司,美好科技"/>
+		<meta name="description" content="美好科技,天津美好科技" />
+		<title>天津美好科技有限公司</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script async src="http://c.cnzz.com/core.php"></script>
+		<!--css-->
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#intro{
+				position: relative;
+				height: 580px;
+				width: 100%;
+				background: url(img/we.png) no-repeat center top;
+				background-size: 100% 100%;
+				/*border-bottom: 5px solid blue;*/
+				/*margin-bottom: 15px;*/
+			}
+			/*底部图片添加动画*/
+			#intro img{
+				animation: move 2s linear infinite;
+				-moz-animation: move 2s linear infinite;
+				-webkit-animation: move 2s linear infinite;
+				-o-animation: move 2s linear infinite;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				background-color: #FFFFFF;				
+				width: 40px;
+				height: auto;
+				opacity: .4;
+				position: absolute;
+				bottom: 0px;
+				left: 650px;
+			}
+			@keyframes move{
+				0%{bottom: 0;}
+				25%{bottom: 10px}
+				50%{bottom: 20px;}
+				75%{bottom: 10px;}
+				100%{bottom: 0;}
+			}
+			@-moz-keyframes move{
+				0%{bottom: 0;}
+				25%{bottom: 10px}
+				50%{bottom: 20px;}
+				75%{bottom: 10px;}
+				100%{bottom: 0;}
+			}
+			@-webkit-keyframes move{
+				0%{bottom: 0;}
+				25%{bottom: 10px}
+				50%{bottom: 20px;}
+				75%{bottom: 10px;}
+				100%{bottom: 0;}
+			}
+			@-ms-keyframes move{
+				0%{bottom: 0;}
+				25%{bottom: 10px}
+				50%{bottom: 20px;}
+				75%{bottom: 10px;}
+				100%{bottom: 0;}
+			}
+			@-o-keyframes move{
+				0%{bottom: 0;}
+				25%{bottom: 10px;}
+				50%{bottom: 20px;}
+				74%{bottom: 10px;}
+				100%{bottom: 0;}
+			}
+			#gotop{
+				padding: 10px 10px;
+				display: none;
+			    width: 30px;
+			    height: 30px;
+		   	    cursor: pointer;
+			    position: fixed;
+			    bottom: 20px;
+			    right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="intro">
+			<a href="#header"><img src="img/bottom.png"/ id="imger"></a>
+		</div>
+			<!--头部-->
+			<div class="header" id="header">
+				<div class="con">
+					<a href="index.html"><img src="img/er.png" /></a>
+					<ul class="nav">
+						<li><a href="index.html">首页<span class="tag">home</span></a><span class="item item1">丨</span></li>
+						<li><a href="product.html">成果展示<span class="tag">product</span></a><span class="item">丨</span></li>
+						<li><a href="news.html">新闻中心<span class="tag">news ceniter</span></a><span class="item">丨</span></li>
+						<li><a href="#company_recruit">人才招募<span class="tag">recruitment</span></a><span class="item">丨</span></li>
+						<li><a href="#about_tit">关于我们<span class="tag">about us</span></a></li>						
+					</ul>
+				</div>
+				<!-- /*标题栏鼠标划过特效Js*/ -->
+				<script type="text/javascript">
+					$(".nav li").hover(function(){
+						$(this).css({
+							"font-weight": "bold",
+							"border-bottom": "7px solid #78ddd9",
+							"border-top": "7px solid #FFFFFF",
+							"margin-top":"-7px"
+							// "top":"-7px"
+						})
+						$(this).find(".item").css("font-weight","normal");
+					},function(){
+						$(this).css({
+							"font-weight": "normal",
+							"border-bottom": "none",
+							"border-top": "none",
+							"margin-top":"0px"
+							// "top":"0px"
+						})
+					})
+				</script>
+			</div>
+			<!--公司简介-->
+			<div id="company">
+				<div class="company_bj">
+					<div class="company_tit">
+						<ul>
+							<li class="p_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="p_txt">
+								公司简介
+								<span>company profile</span>
+							</li>
+							<li class="p_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+					<!--公司宗旨-->
+					<div class="company_zz">
+						<p class="title">
+							公司的宗旨：合作需要胸怀、格局、付出
+						</p>
+						<p class="text">
+							天津美好科技有限公司成立于2015年，以“我们让世界变得更加美好”为公司主旨，以“客户第一，员工第二，公司第三”的<br />发展理念，全力打造了五大产品体系—— MHIS，MShop，MP2P，MMOOC和MESB。公司致力于“智慧教育”，“智慧生活智慧金融”,<br />“智慧媒体”，“智慧大健康”等高端前沿科技领域，并且与中国社会科学院主管的中国经营报社达成战略合作，<br />一起涉足互联网媒体行业，使其作为五大产品的媒体加速器。
+						</p>
+						<p class="text">
+						公司秉承互联网+的六大特点：跨界融合、创新驱动、重塑结构、尊重人性、
+						开发生态、连接一切，依托云平台和大数据技术，<br />
+						将互联网作为当前信息化发展的核心特征提取出来，并与教育、商业、金融、
+						医疗健康、媒体等服务行业进行全面融合。<br />
+						在这种新的社会形态下，美好科技充分发挥互联网在社会资源配置中的优化和集成作用，将美好科技在互联网方向的创新成果深度融合于经济、<br />社会各领域之中，为提升全社会的创新力和生产力贡献自己的力量。美好科技，我们让世界变的更加美好！
+						</p>
+						<hr class="line_3" />
+						<p class="text_3">朋友们，为了实现伟大的事业，大家一起联起手来，合作是每个企业达成梦想、实现目标、成就自我的必经之路。<br /> 美好科技，让世界更美好！</p>
+					</div>
+					<div class="company_show" id="company_show">
+						<ul>
+							<li class="s_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="s_txt">
+								成果展示
+								<span>result show</span>
+							</li>
+							<li class="s_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+				</div>				
+			</div>			
+			<!--公司项目-->
+			<div class="company_xm" id="company_xm">
+				<div class="x_tit">
+					公司项目
+				</div>
+				<a href="#intro"><img src="img/back.png" id="pic" /></a>
+				<div class="x_con">
+					<div class="con_1 con_4">
+						<p class="x_con_tit">转运SaaS平台</p>
+						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
+						<img src="img/y.png" alt="y" />
+						<a href="products.html #showshow">
+						<span class="re_more">
+							Read More	
+							<div class="more" >&gt;</div>
+						</span>
+						</a>
+					</div>
+					<div class="con_2 con_4">
+						<p class="x_con_tit">联通数据中心监控系统</p>
+						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
+						<img src="img/gh.png" alt="y" />
+						<a href="products.html #showshow">
+						<span class="re_more">
+							Read More	
+							<div class="more" >&gt;</div>
+						</span>
+						</a>
+					</div>
+					<div class="con_1 con_4">
+						<p class="x_con_tit">P2P网贷平台</p>
+						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
+						<img src="img/lj.png" alt="y" />
+						<a href="products.html #showshow">
+						<span class="re_more">
+							Read More	
+							<div class="more" >&gt;</div>
+						</span>
+						</a>					
+					</div>
+					<div class="con_2 con_4">
+						<p class="x_con_tit">中国教育网络电视台健康台</p>
+						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
+						<img src="img/c.png" alt="y" />
+						<a href="products.html #showshow">
+						<span class="re_more">
+							Read More	
+							<div class="more" >&gt;</div>
+						</span>
+						</a>					
+					</div>
+					<a href="product.html" target="_blank">
+					<div class="more_fot">
+						Read More
+						<div id="icon1" style="background-image: url(img/foo.jpg)"></div>
+					</div>
+					</a>
+				</div>
+			</div>
+			<!--公司产品-->
+			<div class="company_cp">
+				<div class="cp_des">
+					<div class="cp_des_tit">
+					公司产品
+					</div>
+					<!-- 插入图片直接显示布局方法 -->
+					<!-- <div class="pic_first">
+						<p id="cp_more"><a href="javascript:void(0);">Read More</p>
+						<div id="icon2" style="background-image: url(img/foo.jpg)"></div>
+						</a>
+					</div> -->
+					<div class="cp_show cp_show1">
+						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
+						</a>
+					</div>
+					<div class="cp_show cp_show2">
+						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
+						</a>
+					</div>
+					<div class="cp_show cp_show3">
+						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
+						</a>
+					</div>
+					<div class="cp_show cp_show4">
+						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
+						</a>
+					</div>
+					<div class="cp_show cp_show5">
+						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
+						</a
+					</div>
+				</div>
+				<!--js控制鼠标经过-->
+				<script type="text/javascript">
+					$(function(){
+						$(".pic_first").hover(function(){
+							$("#cp_more").show().css("left","65px");
+							$("#icon2").show().css("left","95px");
+							$(".pic_first").css({"width":"22%",
+							"height":"210px",
+							"box-shadow":"0 10px 12px #000",
+							"margin-left":"160px"});
+						},function(){
+							$("#cp_more,#icon2").hide();
+							$(".pic_first").css({"width":"18%",
+							"height":"180px",
+							"box-shadow":"none",
+							"margin-left":"180px"});
+						})
+						// show1特效
+						$(".cp_show1").hover(function(){
+							$(this).find(".cp_more2").show().css("left","65px");
+							$(this).find(".icon9").show().css("left","95px");
+							$(this).css({"background":"url(img/pic2.png) top",
+								"background-repeat": "no-repeat",
+								"background-size":"100% 100%",
+								"box-shadow":"0 10px 12px #000",
+								"width":"22%",
+								"height":"210px",
+								 "left": "210px",
+								 "background-color": "#78DDD9",
+								 "z-index":999
+							})
+						},function(){
+							$(this).find(".cp_more2,.icon9").hide();
+							$(this).css({
+								"width":"18%",
+								"height":"180px",	
+								"left": "230px",
+								"background":"url(img/sh.png) center",
+								"box-shadow":"none",
+								"background-size": "100% 100%",
+								"background-repeat": "no-repeat",
+								"background-color": "#78DDD9",
+								"z-index":1
+							})
+						})
+						// show2特效
+						$(".cp_show2").hover(function(){
+							$(this).find(".cp_more2").show().css("left","70px");
+							$(this).find(".icon9").show().css("left","95px");
+							$(this).css({"background":"url(img/pic4.png) center",
+								"background-repeat": "no-repeat",
+								"background-size":"100% 100%",
+								"box-shadow":"0 10px 12px #000",
+								"width":"22%",
+								"height":"210px",
+								 "right": "210px",
+								 "z-index":999
+							})
+						},function(){
+							$(this).find(".cp_more2,.icon9").hide();
+							$(this).css({
+								"width":"18%",
+								"height":"180px",	
+								"right": "230px",
+								"background":"url(img/gf.png) center",
+								"box-shadow":"none",
+								"background-size": "50% 60%",
+								"background-repeat": "no-repeat",
+								"background-color": "#78DDD9",
+								"z-index":1
+							})
+						})
+						// show3特效
+						$(".cp_show3").hover(function(){
+							$(this).find(".cp_more2").show().css("left","65px");
+							$(this).find(".icon9").show().css("left","95px");
+							$(this).css({"background":"url(img/pic1.png) center",
+								"background-repeat": "no-repeat",
+								"background-size":"100% 100%",
+								"box-shadow":"0 10px 12px #000",
+								"width":"22%",
+								"height":"210px",
+								 "left": "30px",
+								 "z-index":999
+							})
+						},function(){
+							$(this).find(".cp_more2,.icon9").hide();
+							$(this).css({
+								"width":"18%",
+								"height":"180px",	
+								"left": "50px",
+								"background":"url(img/dfe.png) center",
+								"box-shadow":"none",
+								"background-size": "60% 60%",
+								"background-repeat": "no-repeat",
+								"background-color": "#78DDD9",
+								"z-index":1
+							})
+						})
+						// show4特效
+						$(".cp_show4").hover(function(){
+							$(this).find(".cp_more2").show().css("left","65px");
+							$(this).find(".icon9").show().css("left","95px");
+							$(this).css({"background":"url(img/pic3.png) center",
+								"background-repeat": "no-repeat",
+								"background-size":"100% 100%",
+								"box-shadow":"0 10px 12px #000",
+								"width":"22%",
+								"height":"210px",
+								 "left": "390px",
+								 "z-index":999
+							})
+						},function(){
+							$(this).find(".cp_more2,.icon9").hide();
+							$(this).css({
+								"width":"18%",
+								"height":"180px",	
+								"left": "410px",
+								"background":"url(img/gdd.png) center",
+								"box-shadow":"none",
+								"background-size": "90%",
+								"background-repeat": "no-repeat",
+								"background-color": "#78DDD9",
+								"z-index":1
+							})
+						})
+						// show5特效
+						$(".cp_show5").hover(function(){
+							$(this).find(".cp_more2").show().css("left","65px");
+							$(this).find(".icon9").show().css("left","95px");
+							$(this).css({"background":"url(img/pic5.png) center",
+								"background-repeat": "no-repeat",
+								"background-size":"100% 100%",
+								"box-shadow":"0 10px 12px #000",
+								"width":"22%",
+								"height":"210px",
+								 "left": "750px",
+								 "z-index":999
+							})
+						},function(){
+							$(this).find(".cp_more2,.icon9").hide();
+							$(this).css({
+								"width":"18%",
+								"height":"180px",	
+								"left": "770px",
+								"background":"url(img/xs.png) center",
+								"box-shadow":"none",
+								"background-size": "60% 60%",
+								"background-repeat": "no-repeat",
+								"background-color": "#78DDD9",
+								"z-index":1
+							})
+						})
+					})
+				</script>	
+			</div>
+			<!--新闻中心-->
+			<div class="company_new" id="company_new">
+				<div class="new_des">
+					<div class="new_tit">
+						<ul>
+							<li class="n_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="n_txt">
+								新闻中心
+								<span>news center</span>
+							</li>
+							<li class="n_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+					<br />
+					<div class="new_show">
+						<div class="new_show_des" style="background-image: url(img/qwe.png);background-size: cover;">
+							<!--<img src="img/qwe..png"  width="100%" height="400"/>-->
+							<div class="new_date">
+								<span class="date_l">06<span class="date_r">/04</span></span>
+							</div>
+							<div class="new_list">
+								<p class="l_tit">
+									慕课是大学教育的未来
+								</p>
+								<p class="l_con">
+									从2000年至今，斯坦福大学第10任校长约翰·亨尼斯（John L. Hennessy）掌舵斯坦福近16年。
+									在这段时间里，斯坦福大学捐赠金额翻倍、以100分的评分位列2015年的QS“毕业生就业力”大学排名榜第一名、
+									两位教授所创COURSERA在线免费课程引发全球（慕课，即大规模开放在线课程）风潮...... 这位校长自身也有很好的学术成绩。
+								</p>
+								<a href="news.html #showshow">
+								<p class="l_more">Read More</p>
+								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
+								</a>
+							</div>
+						</div>
+						<div class="new_show_des" style="background-image: url(img/tty.png);background-size: cover;">
+							<!--<img src="img/tty.png"  width="100%" height="400"/>-->
+							<div class="new_date">
+								<span class="date_l">08<span class="date_r">/03</span></span>
+							</div>
+							<div class="new_list">
+								<p class="l_tit">
+									美发O2O  <br /> 一个刚需被制造出来了
+								</p>
+								<p class="l_con">
+									人人都有一个“奢侈”梦 冯小刚的《私人定制》之所以火爆，是因为其切中了中国人的一个痒点——梦想成真，
+									哪怕只有一天。 一款名叫“美吧”的APP之所以能够快速崛起，恰恰也是切中了痒点——上门美发服务。当服务
+									的平台从美发店移到家中，一个刚需被制造出来了，尽管看起来不很大众。和传统美业O2O以广泛吸纳线下美容机构，
+									用海量选择与各种折扣形成一个促销平台的套路不同。
+								</p>
+								<a href="news.html #showshow">
+								<p class="l_more">Read More</p>
+								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
+								</a>
+							</div>
+						</div>
+						<div class="new_show_des" style="background-image: url(img/cxd.png);background-size: cover;">
+							<!--<img src="img/cxd.png"  width="100%" height="400"/>-->
+							<div class="new_date">
+								<span class="date_l">23<span class="date_r">/02</span></span>
+							</div>
+							<div class="new_list">
+								<p class="l_tit">
+									大佬眼中的2016年<br />电商行业发展趋势
+								</p>
+								<p class="l_con">
+									在十二届全国人大四次会议记者会上，全国人大财政经济委员会副主任委员乌日图透露，
+									电子商务法草案稿已经形成，将尽早提请审议。另外，跨境电商税制再次传出改革传闻。
+									2015年，我国网络零售额达到4万亿元，位居世界第一。2016年，电商行业新政频出，这也和
+									整个行业的规模相关。面对这种变化，阿里巴巴、苏宁等电商巨头又是如何看待行业发展方向的呢？
+								</p>
+								<a href="news.html #showshow">
+								<p class="l_more">Read More</p>
+								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<a href="news.html" target="_blank;">
+					<div class="new_fot">
+						Read More
+						<div id="icon4" style="background-image: url(img/foo.jpg)"></div>
+					</div>
+					</a>
+				</div>	
+			</div>
+			<!--人才招聘-->
+			<div class="company_recruit" id="company_recruit">
+				<div class="recruit_des">
+					<div class="recruit_tit">
+						<ul>
+							<li class="r_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="r_txt">
+								人才招聘
+								<span>recruitment</span>
+							</li>
+							<li class="r_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+					<br />
+					<div class="recruit_yz">
+						<p class="yz_title">
+							用人原则
+							<span>employing principle</span>
+						</p>
+						<p class="yz_text">
+							尊重人才、尊重劳动成果、合理安排工作强度、注重企业和员工的精神健康和身体健康，<br />
+							是我们一贯坚持的用人原则，是我们奉行的用人理念。在市场竞争的同时，我们渴望遇到有理想、有原则、正直健康积极的创业型人才共同成就事业，开创属于自己的天地和梦想。泰克威坚持自主研发，<br />更尊重每一位专业人才的技术权威和个人信仰。
+						</p>
+						<hr class="line_3" />
+					</div>
+					<div class="recruit_zp">
+						<div class="zp_tit">
+							招聘职位
+						</div>
+						<div class="zp_zw">
+							<div class="r_group" style="background: #94e9e4;">
+								<ul> 
+									<li class="rr_d ">1</li>
+									<li class="rr_z ">WEB开发工程师</li>
+									<li class="rr_x ">WEB DEVOLEPMENT ENGINEER</li>
+								</ul>
+								<img src="img/foo.jpg"/>
+							</div>
+							<div class="r_group" style="background: #78ddd9;">
+								<ul>
+									<li class="rr_d ">2</li>
+									<li class="rr_z ">JAVA开发工程师</li>
+									<li class="rr_x ">JAVA ENGINEER</li>
+								</ul>
+								<img src="img/foo.jpg"/>
+							</div>
+							<div class="r_group" style="background: #6ad1cd;">
+								<ul>
+									<li class="rr_d ">3</li>
+									<li class="rr_z ">销售人员</li>
+									<li class="rr_x ">SALES STAFF</li>
+								</ul>
+								<img src="img/foo.jpg"/>
+							</div>
+							<div class="r_group" style="background: #5ec4c0;">
+								<ul>
+									<li class="rr_d ">4</li>
+									<li class="rr_z ">UI设计</li>
+									<li class="rr_x ">UI DESIGN</li>
+								</ul>
+								<img src="img/foo.jpg"/>
+							</div>
+						</div>
+						<!--js鼠标划过轮播显示-->
+						<script type="text/javascript">
+							var _index=0
+							$(".r_group").hover(function(){
+								$(this).css({"height":"205px","border-bottom":"5px solid #272727"}).siblings().css({"height":"210px","border-bottom":"none"});
+								$(this).children("img").show().parent().siblings().find("img").hide();
+								_index = $(this).index();
+								$(".r_skey_hide").eq(_index).show().siblings(".r_skey_hide").hide();
+							},function(){
+								$(".r_group").css({"height":"210px","border-bottom":"none"});
+								$(this).children("img").hide();
+							})
+						</script>
+						<!--招聘说明-->
+						<div class="r_sm">
+							<div class="r_bg"></div>
+						<div class="r_skey r_skey_hide" style="display: block;">
+							<ul class="r_ll ">
+									<li>任职资格</li>
+									<li>1、大学本科及以上学历，计算机相关专业优先；</li>
+									<li>2、一年以上Web前端开发经验；</li>
+									<li>3、精通DIV CSS排版设计，理解WEB标准和兼容性，兼容多种浏览器的前端页面代码；</li>
+									<li>4、精通APP端的浏览器自适应；</li>
+									<li>5、熟悉HTML5、CSS3.0、Javascript、Ajax，Bootstrap等web前端技术，能够自主编写javascript实现相关的前台交互功能；</li>
+									<li>6、对互联网产品有着良好的感觉，对交互体验有较为深入的了解；</li>
+
+							</ul>
+							<ul class="r_rr ">
+									<li>岗位职责</li>
+									<li>1.对网站的页面的css布局，网页特效开发；</li>
+									<li>2.承担WEB前端核心模块的设计、实现工作；</li>
+									<li>4.参与进行关键技术验证以及技术选型工作；</li>
+									<li>5.和产品经理沟通并确定产品开发需求；</li>
+							</ul>
+							<br style="clear: both;" />
+						</div>
+						<div class="r_skey r_skey_hide">
+							<ul class="r_ll ">
+									<li>任职资格</li>
+									<li>1、根据项目具体要求，承担开发任务，按计划完成任务目标；</li>
+									<li>2、独立完成软件系统及模块的编码和软件系统及模块的测试；</li>
+									<li>3、负责编制与项目相关的文档；</li>
+									<li>4、参与系统稳定性、性能和扩展性调试；</li>
+							</ul>
+							<ul class="r_rr ">
+								<li>岗位职责</li>
+								<li>1.熟悉Java语音，有1年以上的项目开发经验；</li>
+								<li>2.掌握JS、HTML、CSS、AJAX等WEB开发技术；</li>
+								<li>4.熟悉标准SQL，熟悉MYSQL、ORACLE至少一种数据库；有SQL性能调优经验和优先；</li>
+								<li>5.熟悉Android手机端开发业务；</li>
+								<li>6.有大型网站架构或优化经验者优先考虑；</li>
+								<li>7.对业内新技术及趋势有较强的敏感度；</li>
+								<li>8.有解决问题、钻研新技术的兴趣呵呵能力，善于交流和表达，有良好的团队合作精神。</li>
+							</ul>
+							<br style="clear: both;" />
+						</div>
+						<div class="r_skey r_skey_hide">
+							<ul class="r_ll ">
+									<li>任职资格</li>
+									<li>1、大学本科及以上学历；</li>
+									<li>2、一年以上的销售经验，有地推经验者优先；</li>
+									<li>3、性格开朗，善于沟通交流，能独立开展业务；</li>
+									<li>4、有计算机方面基础，办公软件熟练，学习能力强；</li>
+									<li>5、制定产品推广方案，及策划营销活动，促进销售计划完成；</li>								
+							</ul>
+							<ul class="r_rr ">
+									<li>岗位职责</li>
+									<li>1.销售人员职位，在上级的领导和简单下定期完成量化的工作要求，并能独立处理和解决所负责的任务；</li>
+									<li>2.管理客户关系，完成销售任务；</li>
+									<li>4.了解和发展客户需求及购买愿望，介绍自己产品的优点和特色；</li>
+									<li>5.对客户提供专业的咨询；</li>
+									<li>6.收集潜在科技资料；</li>
+							</ul>
+							<br style="clear: both;" />
+						</div>
+						<div class="r_skey r_skey_hide">
+							<ul class="r_ll ">
+								<li>任职资格</li>
+								<li>1、大专或大专以上的学历，美术、设计或广告等专业毕业；</li>
+								<li>2、有良好的美术功底、色彩搭配及审美能力，较强的平面设计和网页设计创意能力；</li>
+								<li>3、熟练Photoshop/Dreaweaver /Flash等图形设计及网页编辑软件；</li>
+								<li>4、有着非常好的创意和想法，并且有欲望把想法转为图像表达出来；</li>
+								<li>5、能独立完成设计及制作任务，具备良好的团队合作精神和自学能力，责任心强；</li>
+								<li>6、讲求实效，有强烈的责任感，能用心深入细节，追求完美,能够承受工作压力；</li>
+							</ul>
+							<ul class="r_rr ">
+								<li>岗位职责</li>
+								<li>1.参与网站、移动终端、PC终端等网络宣传推广策划并完成设计工作；</li>
+								<li>2.参与并完成策划并设计公司各种活动、营销等专题页设计；</li>
+								<li>3.日常网站及微信、微博配图设计、上传等；</li>
+								<li>4.了解装修行业趋势和现状，结合行业和公司特点，把控宣传设计效果，完工公司网络宣传需要的设计并及时做好更新、维护；</li>
+								<li>5.负责公司宣传册，活动宣传页、名片等设计技术对接；</li>
+							</ul>
+							<br style="clear: both;" />
+						</div>
+						</div>
+					</div>
+					<br style="clear: both;" />
+					</div>
+				</div>
+			<!--背景-->
+			<div class="zp_indro">
+				<p class="zp_contact">电话：022-87458086 <span>邮箱：hr@meihaotech.com</span></p>	
+			</div>
+			<!--关于我们-->
+			<div class="about_us" id="about">
+				<div class="about_us_des">
+					<div class="about_tit" id="about_tit">
+						<ul>
+							<li class="a_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="a_txt">
+								关于我们
+								<span>about us</span>
+							</li>
+							<li class="a_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="about_us_con">
+					<ul class="con_left ">
+						<li class="a ">地址：南开区白堤路馨达园1-1-601</li>
+						<li class="a ">电话：022-87458086</li>
+						<li class="a " style="padding-bottom: 30px; ">邮箱：hr@meihaotech.com</li>
+						<li></li>
+						<li class="b ">银行：附近有交通、农业、邮政、工商等银行</li>
+						<li class="b ">交通：周边公交640、638、50、52、地铁三号线等</li>
+						<li class="b ">生活：超市、餐馆等500内</li>
+					</ul>
+					<ul class="con_right ">
+						<li>
+							<img src="img/ewm.png"/>
+						</li>
+						<li style="text-align: center;font-size: 15px;">扫一扫关注我们</li>
+					</ul>
+			<!--<br style="clear: both;" />-->
+				</div>
+			</div>
+			<!-- 公司地图 -->
+			<iframe src="map.html" width="100%" height="300" frameborder="0" scrolling="no" style="background:#272727;"></iframe>
+			
+			<!-- 底部footer -->
+			<div class="footer">
+				<div class="footer_des">
+					<p class="meihao foot1">美好科技，让世界更美好</p>
+					<p class="meihao foot2">meihao technology,better this world!</p>
+					<p class="meihao foot3">天津美好科技有限公司.2016</p>
+					<a href="#intro"><img src="img/back.png" /></a>
+				</div>
+			</div>
+			<hr class="line_4" />
+			<!-- 回到顶部 -->
+		    <div id="gotop">
+		        <img src="img/gotop.png" width="30" height="30" alt="回到顶部"  />
+		    </div>
+		    <!-- 回到顶部JS -->
+		    <script type="text/javascript">
+		    $(function(){
+		        //绑定页面滚动事件
+		       $(window).scroll(function(){
+		       var len = $(this).scrollTop();
+		           if(len>=300){
+		            //显示回到顶部按钮
+		             $("#gotop").show();
+		           }else {
+		            //隐藏回到顶部按钮
+		             $("#gotop").hide();
+		           }
+		       })
+		       //动画效果，点击平滑滚动回到顶部
+		       $("#gotop").click(function(){
+		            $('body,html').stop().animate({ scrollTop: 0 },500)
+		       })
+		       $("#gotop").hover(function(){
+		            $(this).css("background","#78DDD9");
+		       },function(){
+		            $(this).css("background","none");
+		       })
+		    })
+		    </script>
+	</body>
+</html>

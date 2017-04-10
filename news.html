@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="天津美好科技有限公司,美好科技"/>
+		<meta name="description" content="美好科技,天津美好科技" />
+		<title>天津美好科技有限公司</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/news.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script async src="http://c.cnzz.com/core.php"></script>
+		<!--css-->
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#gotop{
+				padding: 10px 10px;
+				display: none;
+			    width: 30px;
+			    height: 30px;
+		   	    cursor: pointer;
+			    position: fixed;
+			    bottom: 20px;
+			    right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+			<!--头部-->
+			<div class="header" id="header">
+				<div class="con">
+					<a href="index.html"><img src="img/er.png" /></a>
+					<ul class="nav">
+						<li><a href="index.html">首页<span class="tag">home</span></a><span class="item item1">丨</span></li>
+						<li><a href="product.html">成果展示<span class="tag">news</span></a><span class="item">丨</span></li>
+						<li><a href="javascript:void(0);">新闻中心<span class="tag">news ceniter</span></a><span class="item">丨</span></li>
+						<li><a href="index.html #company_recruit">人才招募<span class="tag">recruitment</span></a><span class="item">丨</span></li>
+						<li><a href="index.html #about_tit">关于我们<span class="tag">about us</span></a></li>						
+					</ul>
+				</div>
+				<!-- /*标题栏鼠标划过特效Js*/ -->
+				<script type="text/javascript">
+					$(".nav li").hover(function(){
+						$(this).css({
+							"font-weight": "bold",
+							"border-bottom": "7px solid #78ddd9",
+							"border-top": "7px solid #FFFFFF",
+							"margin-top":"-7px"
+							// "top":"-7px"
+						})
+						$(this).find(".item").css("font-weight","normal");
+					},function(){
+						$(this).css({
+							"font-weight": "normal",
+							"border-bottom": "none",
+							"border-top": "none",
+							"margin-top":"0px"
+							// "top":"0px"
+						})
+					})
+				</script>
+			</div>
+			<!--新闻中心-->
+			<div class="news">
+				<div class="news_header"></div>
+				<div class="news_des">
+					<div class="news_tit">
+						<ul>
+							<li class="p_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="p_txt">
+								新闻中心
+								<span>news center</span>
+							</li>
+							<li class="p_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+					<!-- 轮播展示 -->
+					<div class="news_center" id="showshow">
+						<div class="news_switch" >
+							<div class="pic_switch switch1 hover">
+								<p class="news_tag">慕课是<br />大学教育的未来</p>
+								<div class="news_date">
+									<span class="news_date_l">06<span class="news_date_r">/04</span></span>
+								</div>
+							</div>
+							<div class="pic_switch switch2">
+								<p class="news_tag">美发O2O</p>
+								<div class="news_date">
+									<span class="news_date_l">08<span class="news_date_r">/03</span></span>
+								</div>
+							</div>
+							<div class="pic_switch switch3">								
+								<p class="news_tag">
+									大佬眼中的2016年<br />电商行业发展趋势
+								</p>
+								<div class="news_date">
+									<span class="news_date_l">23<span class="news_date_r">/02</span></span>
+								</div>
+							</div>
+							<div class="pic_switch switch4" style="margin-right:0px;">
+								<p class="news_tag">阿里云携手<br />华大基因、英特尔</p>
+								<div class="news_date">
+									<span class="news_date_l">16<span class="news_date_r">/02</span></span>
+								</div>
+							</div>
+						</div>
+						<div class="pic_left"></div>
+						<div class="pic_right"></div>
+					</div>
+				<script type="text/javascript">
+					
+				var index = -1 ;
+				//内容轮播
+				// function lunbo(){
+				// 	$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
+				// 	$(".test").eq(index).show().siblings(".test").hide();
+				// 	$(".p_tit").eq(index).show().siblings(".p_tit").hide();
+				// }
+
+				// 下一页
+				function NextPic()
+					{	
+						if(index>3)
+						{
+							$(".pic_right").css("background-image","url(img/r_cc.png)");
+							$(".pic_left").css("background-image","url(img/l_37.png)");
+							index = 3 ;
+						}
+
+						$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
+						$(".test").eq(index).show().siblings(".test").hide();
+						$(".p_tit").eq(index).show().siblings(".p_tit").hide();
+					}
+				$(".pic_right").click(function(){
+					 index++ ;
+					 NextPic();
+					 // lunbo();
+				});
+				function PrvPic()
+					{	
+						if(index<0)
+						{
+							$(".pic_right").css("background-image","url(img/r_37.png)");
+							$(".pic_left").css("background-image","url(img/l_cc.png)");
+							index = 0;
+						}
+						$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
+						$(".test").eq(index).show().siblings(".test").hide();
+						$(".p_tit").eq(index).show().siblings(".p_tit").hide();
+					}
+				$(".pic_left").click(function(){
+					 index-- ;
+					 PrvPic();
+					 // lunbo();
+				});
+				</script>
+					<!-- 新闻说明 -->
+					<div class="news_txt">
+						<p class="p_tit" style="display:block;">
+							慕课是大学教育的未来
+						</p>
+						<p class="p_tit">
+							美发O2O 
+						</p>
+						<p class="p_tit">
+							大佬眼中的2016年
+							电商行业发展趋势
+						</p>
+						<p class="p_tit">
+							阿里云携手华大基因、英特尔
+						</p>
+						<hr class="line" />
+						<div class="test" style="display:block;">
+							从2000年至今，斯坦福大学第10任校长约翰·亨尼斯（John L. Hennessy）掌舵斯坦福近16年。在这段时间里，斯坦福大学捐赠金额翻倍、以100分的评分位列2015年QS “毕业生就业力”大学排名榜第一名、两位教授所创Coursera在线免费课程引发全球MOOC（慕课，即大规模开放在线课程）风潮…… 这位校长自身也有很好的学术成绩。他是IEEE和ACM会士，美国国家工程研究院院士及美国科学艺术研究院院士。1981年，他创造了RISC（精简指令集计算机）一词，被称为“RISC之父”。约翰·冯·诺依曼奖的历史名单里，亦有他的名字。 他的影响力还不限于学界。2011年奥巴马访问硅谷时，在场的人有马克·扎克伯格、史蒂夫·乔布斯……约翰是他们之中唯一的大学校长
+						</div>
+						<div class="test">
+							人人都有一个“奢侈”梦 冯小刚的《私人定制》之所以火爆，是因为其切中了中国人的一个痒点——梦想成真， 哪怕只有一天。 一款名叫“美吧”的APP之所以能够快速崛起，恰恰也是切中了痒点——上门美发服务。当服务 的平台从美发店移到家中，一个刚需被制造出来了，尽管看起来不很大众。和传统美业O2O以广泛吸纳线下美容机构， 用海量选择与各种折扣形成一个促销平台的套路不同。
+						</div>
+						<div class="test">
+							在十二届全国人大四次会议记者会上，全国人大财政经济委员会副主任委员乌日图透露， 电子商务法草案稿已经形成，将尽早提请审议。另外，跨境电商税制再次传出改革传闻。 2015年，我国网络零售额达到4万亿元，位居世界第一。2016年，电商行业新政频出，这也和 整个行业的规模相关。面对这种变化，阿里巴巴、苏宁等电商巨头又是如何看待行业发展方向的呢？
+						</div>
+						<div class="test">
+							对于备受瞩目的基因大数据行业，全球领先的云计算服务商阿里云开始抓紧布局。今天，从深圳举办的第十届国际基因组学大会上传来消息，阿里云携手英特尔、华大基因三巨头共同签署战略合作备忘录，宣布启动共建中国乃至亚太地区首个定位精准医疗应用云平台。该消息一经发布，便引起了业界的广泛关注......
+						</div>
+					</div>
+					<!-- 新闻详情JS -->
+					<script type="text/javascript">
+							var _home=0;
+							$(".pic_switch").hover(function(){
+								$(this).addClass("hover");
+								var _home=$(this).index();
+								$(".test").eq(_home).show().siblings(".test").hide();
+								$(".p_tit").eq(_home).show().siblings(".p_tit").hide();
+								$(this).find(".news_tag").show();
+							},function(){
+								$(this).removeClass("hover");
+								$(this).find(".news_tag").hide();
+							})
+
+						$(".switch1").hover(function(){
+							$(this).css({
+								"background-image":"url(img/mn_1.png)",
+								"background-size":"100%",
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ab_1.png)",
+								"background-size":"100%;"
+							})
+						})
+						$(".switch2").hover(function(){
+							$(this).css({
+								"background-image":"url(img/mn_2.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ab_2.png)",
+								"background-size":"100%"
+							})
+						})
+						$(".switch3").hover(function(){
+							$(this).css({
+								"background-image":"url(img/mn_3.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ab_3.png)",
+								"background-size":"100%;"
+							})
+						})
+						$(".switch4").hover(function(){
+							$(this).css({
+								"background-image":"url(img/mn_4.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ab_4.png)",
+								"background-size":"100%;"
+							})
+						})
+					</script>
+				</div>
+				<div class="news_bg"></div>		
+			</div>	
+
+			<!-- 底部footer -->
+			<div class="footer">
+				<div class="footer_des">
+					<p class="meihao foot1">美好科技，让世界更美好</p>
+					<p class="meihao foot2">meihao technology,better this world!</p>
+					<p class="meihao foot3">天津美好科技有限公司.2016</p>
+					<a href="#header"><img src="img/back.png" /></a>
+				</div>
+			</div>
+			<hr class="line_4" />
+			<!-- 回到顶部 -->
+		    <div id="gotop">
+		        <img src="img/gotop.png" width="30" height="30" alt="回到顶部"  />
+		    </div>
+		    <!-- 回到顶部JS -->
+		    <script type="text/javascript">
+		    $(function(){
+		        //绑定页面滚动事件
+		       $(window).scroll(function(){
+		       var len = $(this).scrollTop();
+		           if(len>=100){
+		            //显示回到顶部按钮
+		             $("#gotop").show();
+		           }else {
+		            //隐藏回到顶部按钮
+		             $("#gotop").hide();
+		           }
+		       })
+		       //动画效果，点击平滑滚动回到顶部
+		       $("#gotop").click(function(){
+		            $('body,html').stop().animate({ scrollTop: 0 },500)
+		       })
+		       $("#gotop").hover(function(){
+		            $(this).css("background","#78DDD9");
+		       },function(){
+		            $(this).css("background","none");
+		       })
+		    })
+		    </script>
+	</body>
+</html>

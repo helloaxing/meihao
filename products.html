@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="天津美好科技有限公司,美好科技"/>
+		<meta name="description" content="美好科技,天津美好科技" />
+		<title>天津美好科技有限公司</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script async src="http://c.cnzz.com/core.php"></script>
+		<!--css-->
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#gotop{
+				padding: 10px 10px;
+				display: none;
+			    width: 30px;
+			    height: 30px;
+		   	    cursor: pointer;
+			    position: fixed;
+			    bottom: 20px;
+			    right: 20px;
+			}
+		</style>
+	</head>
+	<body>
+			<!--头部-->
+			<div class="header" id="header">
+				<div class="con">
+					<a href="index.html"><img src="img/er.png" /></a>
+					<ul class="nav">
+						<li><a href="index.html">首页<span class="tag">home</span></a><span class="item item1">丨</span></li>
+						<li><a href="product.html">成果展示<span class="tag">product</span></a><span class="item">丨</span></li>
+						<li><a href="news.html">新闻中心<span class="tag">news ceniter</span></a><span class="item">丨</span></li>
+						<li><a href="index.html #company_recruit">人才招募<span class="tag">recruitment</span></a><span class="item">丨</span></li>
+						<li><a href="index.html #about_tit">关于我们<span class="tag">about us</span></a></li>						
+					</ul>
+				</div>
+				<!-- /*标题栏鼠标划过特效Js*/ -->
+				<script type="text/javascript">
+					$(".nav li").hover(function(){
+						$(this).css({
+							"font-weight": "bold",
+							"border-bottom": "7px solid #78ddd9",
+							"border-top": "7px solid #FFFFFF",
+							"margin-top":"-7px"
+							// "top":"-7px"
+						})
+						$(this).find(".item").css("font-weight","normal");
+					},function(){
+						$(this).css({
+							"font-weight": "normal",
+							"border-bottom": "none",
+							"border-top": "none",
+							"margin-top":"0px"
+							// "top":"0px"
+						})
+					})
+				</script>
+			</div>
+			<!--成果展示-->
+			<div class="product">
+				<div class="product_header"></div>
+				<div class="product_des">
+					<div class="product_tit">
+						<ul>
+							<li class="p_left">
+								<hr class="line_1" size="1">
+							</li>
+							<li class="p_txt">
+								成果展示
+								<span>result show</span>
+							</li>
+							<li class="p_right">
+								<hr class="line_2" size="1">
+							</li>
+						</ul>
+					</div>
+					<!-- 轮播展示 -->
+					<div class="product_show">
+						<ul class="product_tag">
+							<li id="showshow" style="background-color: #000000;color: #FFFFFF;">公司项目</li>
+							<li style="background-color: #FFFFFF;color: #000000;">公司产品</li>
+						</ul>
+					<script type="text/javascript">
+						$(".product_tag li:first").click(function(){
+							$(this).css({
+								"background-color":"#000000","color":"#FFFFFF"}).siblings().css({"background-color":"#FFFFFF","color":"#000000"});
+							$(".product_txt1").css("display","block");
+							$(".product_txt").css("display","none");
+							$(".product_switch1").css("display","block");
+							$(".product_switch").css("display","none");
+						})
+						$(".product_tag li:last").click(function(){
+							$(this).css({
+								"background-color":"#000000","color":"#FFFFFF"}).siblings().css({"background-color":"#FFFFFF","color":"#000000"});
+							$(".product_txt").css("display","block");
+							$(".product_txt1").css("display","none");
+							$(".product_switch").css("display","block");
+							$(".product_switch1").css("display","none");
+						})
+					</script>
+						<div class="product_switch"  style="display:none;">
+							<div class="pic_switch switch1"></div>
+							<div class="pic_switch switch2"></div>
+							<div class="pic_switch switch3"></div>
+							<div class="pic_switch switch4"></div>
+							<div class="pic_switch switch5" style="margin-right:0px;"></div>
+						</div>
+						<div class="product_switch1" id="showshow">
+							<div class="pic_switch1 switch11 hover">
+								<p class="con_tag">转运SaaS平台</p>
+							</div>
+							<div class="pic_switch1 switch22">
+								<p class="con_tag">P2P网贷平台</p>
+							</div>
+							<div class="pic_switch1 switch33">
+								<p class="con_tag">联通数据中心<br />监控系统</p>
+							</div>
+							<div class="pic_switch1 switch44" style="margin-right:0px;">
+								<p class="con_tag tag_4">中国教育<br />网络电视台健康台</p>
+							</div>
+						</div>
+						<div class="pic_left"></div>
+						<div class="pic_right"></div>
+					</div>
+
+					<script type="text/javascript">					
+						var index1 = -1 ;
+						//内容轮播
+						// function lunbo(){
+						// 	$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
+						// 	$(".test").eq(index).show().siblings(".test").hide();
+						// 	$(".p_tit").eq(index).show().siblings(".p_tit").hide();
+						// }
+
+						// 下一页
+						function NextPict()
+							{	
+								if(index1>3)
+								{
+									$(".pic_right").css("background-image","url(img/r_cc.png)");
+									$(".pic_left").css("background-image","url(img/l_37.png)");
+									$(".switch44").css({
+										"background":"#272727",
+										"background-image":"none",
+									})
+									$(".tag_4").show().text("没有更多内容");
+									index1 = 3;
+								}
+								$(".pic_switch1").eq(index1).addClass("hover").siblings().removeClass("hover");
+								$(".test1").eq(index1).show().siblings(".test1").hide();
+								$(".p_tit1").eq(index1).show().siblings(".p_tit1").hide();
+							}
+						$(".pic_right").click(function(){
+							 index1++ ;
+							 NextPict();
+							 // lunbo();
+						});
+						function PrvPict()
+							{	
+								if(index1<0)
+								{
+									$(".pic_right").css("background-image","url(img/r_37.png)");
+									$(".pic_left").css("background-image","url(img/l_cc.png)");
+									index1 = 0;
+								}
+								$(".pic_switch1").eq(index1).addClass("hover").siblings().removeClass("hover");
+								$(".test1").eq(index1).show().siblings(".test1").hide();
+								$(".p_tit1").eq(index1).show().siblings(".p_tit1").hide();
+							}
+						$(".pic_left").click(function(){
+							$(".switch44").css("background","url(img/ee_4.png)");
+							$(".tag_4").hide();						
+							 index1-- ;
+							 PrvPict();
+							 // lunbo();
+						});
+					</script>
+					<!-- 文字说明 -->
+					<!-- 产品说明 -->
+					<div class="product_txt" style="display:none;">
+						<p class="p_tit" style="display:block;">M-慕课系统</p>
+						<p class="p_tit">M-SHOP商城</p>
+						<p class="p_tit">M-MESB</p>
+						<p class="p_tit">M-HIS系统</p>
+						<p class="p_tit">M-P2P</p>
+						<hr class="line" />
+						<div class="test" style="display:block;">
+							基于HTML5技术和跨平台IOS & Android解决方案的大规模开放在线课程云平台，该平台不仅仅可以在学校内部实现整体覆盖在线教学的目的，也可以放在云端，实现客户自运营慕课网站的需求。该云平台不仅仅对于视频压缩有专利的技术作为核心竞争力，而且对于不同客户有着量身定制的解决方案，例如对于大学等学术机构有内建局域网解决方案，完全支持学校内部的学生以及教师的视频教学需求，而对于打算建立慕课网站的公司，也有一套云端慕课系统解决方案。
+						</div>
+						<div class="test">
+							MShop电商平台系统是美好科技新推出的电商平台级产品，系统采用全新的框架体系，前台界面设计遵循美观性、实用性的原则，给用户带来完美的视觉享受和轻松地购物体验，并且支持客户自定义化CMS实现。后台采用模块化的管理机制，让平台管理更加方便、快捷、规范。并与现有主流社区系统深度结合，是目前世界上领先的电商平台系统。 MShop电商平台系统的功能也极具电子商务特色。供应商入驻、平台自营、佣金结算平台掌控营销管理等功能从根源上解决了电商企业普遍存在的推广、招商、盈利等问题；商品评价、售后服务系统、商家保证金等功能确保了消费者的权益。升级优化的CMS、圈子和微商城等模块，丰富了商城系统的产品展示方式；手机客户端的使用，更加贴近当下的购物潮流。
+						</div>
+						<div class="test">
+							MESB全称为Meihao Enterprise Service Bus，即美好企业服务总线。它是传统中间件技术与XML、Web服务等技术结合的产物。MESB提供了网络中最基本的连接中枢，是构筑企业神经系统的必要元素。美好科技经过多年的项目研发积累，开发出了MESB企业服务总线产品，该产品是构筑在总线服务框架基础之上，按照SOA架构理念，规划设计为系列产品线，包括MESB运行平台、MESB监控平台、MESB服务治理平台、MESB集成开发平台；保证了SOA全生命周期的支撑，并且无缝支持REST方式的服务对接。
+						</div>
+						<div class="test">
+							基于云计算技术的B/S架构的HIS系统，为基层医疗机构提供标准化的、信息化的、可共享的医疗信息管理系统，实现医患事务管理和临床诊疗管理等标准医疗管理信息系统的功能。系统利用云计算平台的技术优势，建立统一的健康档案存储平台，有效实现医疗数据共享与交换，解决数据重复采集及信息孤岛等问题，为实现区域医疗卫生信息化平台奠定了基础。 系统采用了RIA(Rich Internet Application)技术体系思想。RIA摆脱了基于页面的架构，能够降低Web服务器的负载并降低总的网络流量。相比Web应用程序一次又一次地下载整个页面，RIA的整个应用程序只需下载一次，从而与服务器的通信仅仅是页面上显示的数据。通过减少服务器负载和网络流量，可以显著减低基础设施的成本。使用健全的架构原则和最佳的做法开发的RIA，还可以极大地提高应用程序的可维护性，同时大大缩短构建应用程序的开发时间，采用B/S架构做到C/S架构的应用效能。采用J2EE架构，以及MVC的设计模式，达成三层Java Web-Based B/S 架构的医疗信息系统，可以为用户提供开放的应用程序接口（API），可有效的集成第三方应用，并且快速因应业务需求的系统修改，不仅可在局域网上运行的医院信息系统（HIS），同时可以具备透过互联网达到远程医疗的先进的软件体系结构，并具有与医保等外部系统联接的接口，为目前最佳整体架构体系。
+						</div>
+						<div class="test">
+							MP2P网贷系统是基于当前互联网金融行业最常见的P2P,P2G,P2F等业务模式所开发的一套网贷平台系统，该P2P网贷系统由“前台业务系统”和“后台管理系统”组成，采用当前最为安全的银行托管模式/银行存管模式进行资金结算，降低平台运营风险，确保平台用户资金安全。适用企业：担保、小贷、融资租赁、基金、信托及相关国企、上市企业。
+						</div>
+					</div>
+					<!-- 产品说明JS -->
+					<script type="text/javascript">
+						var _index=0
+						$(".pic_switch").hover(function(){
+							$(this).addClass("hover");
+							var _index=$(this).index();
+							$(".test").eq(_index).show().siblings(".test").hide();
+							$(".p_tit").eq(_index).show().siblings(".p_tit").hide();
+						},function(){
+							$(this).removeClass("hover");
+						})
+						$(".switch1").hover(function(){
+							$(this).css({
+								"background-image":"url(img/pic1.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/cs-1.png)",
+								"background-size":"60% 60%"
+							})
+						})
+						$(".switch2").hover(function(){
+							$(this).css({
+								"background-image":"url(img/pic2.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/cs-2.png)",
+								"background-size":"100%"
+							})
+						})
+						$(".switch3").hover(function(){
+							$(this).css({
+								"background-image":"url(img/pic3.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/cs-3.png)",
+								"background-size":"85%"
+							})
+						})
+						$(".switch4").hover(function(){
+							$(this).css({
+								"background-image":"url(img/pic4.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/cs-4.png)",
+								"background-size":"50% 60%"
+							})
+						})
+						$(".switch5").hover(function(){
+							$(this).css({
+								"background-image":"url(img/pic5.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/cs-5.png)",
+								"background-size":"60% 60%"
+							})
+						})
+					</script>	
+
+					<!-- 项目说明 -->
+					<div class="product_txt1">
+						<p class="p_tit1" style="display:block;">转运SAAS平台</p>
+						<p class="p_tit1">P2P网贷平台</p>
+						<p class="p_tit1">联通数据中心监控系统</p>
+						<p class="p_tit1">中国教育网络电视台健康台</p>
+						<hr class="line" />
+						<div class="test1" style="display:block;">
+							天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。
+						</div>
+						<div class="test1">
+							天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。
+						</div>
+						<div class="test1">
+							天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。
+						</div>
+						<div class="test1">
+							天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。天津美好科技有限公司成立于2015年7月，是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品。	
+						</div>
+					</div>
+					<!-- 项目说明js -->
+					<script type="text/javascript">
+						var _home=0;
+						$(".pic_switch1").hover(function(){
+							$(this).addClass("hover");
+							var _home=$(this).index();
+							$(".test1").eq(_home).show().siblings(".test1").hide();
+							$(".p_tit1").eq(_home).show().siblings(".p_tit1").hide();
+							$(this).find(".con_tag").show();
+						},function(){
+							$(this).removeClass("hover");
+							$(this).find(".con_tag").hide();
+						})
+						$(".switch11").hover(function(){
+							$(this).css({
+								"background-image":"url(img/df_1.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ee_1.png)",
+								"background-size":"100%;"
+							})
+						})
+						$(".switch22").hover(function(){
+							$(this).css({
+								"background-image":"url(img/df_2.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ee_2.png)",
+								"background-size":"100%"
+							})
+						})
+						$(".switch33").hover(function(){
+							$(this).css({
+								"background-image":"url(img/df_3.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ee_3.png)",
+								"background-size":"100%;"
+							})
+						})
+						$(".switch44").hover(function(){
+							$(this).css({
+								"background-image":"url(img/df_4.png)",
+								"background-size":"100%"
+							})
+						},function(){
+							$(this).css({
+								"background-image":"url(img/ee_4.png)",
+								"background-size":"100%;"
+							})
+						})
+					</script>
+				</div>
+				<div class="product_bg"></div>		
+			</div>	
+
+			<!-- 底部footer -->
+			<div class="footer">
+				<div class="footer_des">
+					<p class="meihao foot1">美好科技，让世界更美好</p>
+					<p class="meihao foot2">meihao technology,better this world!</p>
+					<p class="meihao foot3">天津美好科技有限公司.2016</p>
+					<a href="#header"><img src="img/back.png" /></a>
+				</div>
+			</div>
+			<hr class="line_4" />
+			<!-- 回到顶部 -->
+		    <div id="gotop">
+		        <img src="img/gotop.png" width="30" height="30" alt="回到顶部"  />
+		    </div>
+		    <!-- 回到顶部JS -->
+		    <script type="text/javascript">
+		    $(function(){
+		        //绑定页面滚动事件
+		       $(window).scroll(function(){
+		       var len = $(this).scrollTop();
+		           if(len>=100){
+		            //显示回到顶部按钮
+		             $("#gotop").show();
+		           }else {
+		            //隐藏回到顶部按钮
+		             $("#gotop").hide();
+		           }
+		       })
+		       //动画效果，点击平滑滚动回到顶部
+		       $("#gotop").click(function(){
+		            $('body,html').stop().animate({ scrollTop: 0 },500)
+		       })
+		       $("#gotop").hover(function(){
+		            $(this).css("background","#78DDD9");
+		       },function(){
+		            $(this).css("background","none");
+		       })
+		    })
+		    </script>
+	</body>
+</html>
