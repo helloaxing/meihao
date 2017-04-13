@@ -1,90 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 		<meta name="keywords" content="天津美好科技有限公司,美好科技"/>
 		<meta name="description" content="美好科技,天津美好科技" />
 		<title>天津美好科技有限公司</title>
 		<link rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-		<script async src="http://c.cnzz.com/core.php"></script>
-		<!--css-->
-		<style type="text/css">
-			*{
-				margin: 0px;
-				padding: 0px;
-			}
-			#intro{
-				position: relative;
-				height: 580px;
-				width: 100%;
-				background: url(img/we.png) no-repeat center top;
-				background-size: 100% 100%;
-				/*border-bottom: 5px solid blue;*/
-				/*margin-bottom: 15px;*/
-			}
-			/*底部图片添加动画*/
-			#intro img{
-				animation: move 2s linear infinite;
-				-moz-animation: move 2s linear infinite;
-				-webkit-animation: move 2s linear infinite;
-				-o-animation: move 2s linear infinite;
-				animation-iteration-count: infinite;
-				-webkit-animation-iteration-count: infinite;
-				background-color: #FFFFFF;				
-				width: 40px;
-				height: auto;
-				opacity: .4;
-				position: absolute;
-				bottom: 0px;
-				left: 650px;
-			}
-			@keyframes move{
-				0%{bottom: 0;}
-				25%{bottom: 10px}
-				50%{bottom: 20px;}
-				75%{bottom: 10px;}
-				100%{bottom: 0;}
-			}
-			@-moz-keyframes move{
-				0%{bottom: 0;}
-				25%{bottom: 10px}
-				50%{bottom: 20px;}
-				75%{bottom: 10px;}
-				100%{bottom: 0;}
-			}
-			@-webkit-keyframes move{
-				0%{bottom: 0;}
-				25%{bottom: 10px}
-				50%{bottom: 20px;}
-				75%{bottom: 10px;}
-				100%{bottom: 0;}
-			}
-			@-ms-keyframes move{
-				0%{bottom: 0;}
-				25%{bottom: 10px}
-				50%{bottom: 20px;}
-				75%{bottom: 10px;}
-				100%{bottom: 0;}
-			}
-			@-o-keyframes move{
-				0%{bottom: 0;}
-				25%{bottom: 10px;}
-				50%{bottom: 20px;}
-				74%{bottom: 10px;}
-				100%{bottom: 0;}
-			}
-			#gotop{
-				padding: 10px 10px;
-				display: none;
-			    width: 30px;
-			    height: 30px;
-		   	    cursor: pointer;
-			    position: fixed;
-			    bottom: 20px;
-			    right: 20px;
-			}
-		</style>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<!-- 兼容各个浏览器窗口第一屏图片宽高度 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var newheight = $(window).height();
+				$("#intro").css("height",newheight);
+			});
+		</script>
 	</head>
 	<body>
 		<div id="intro">
@@ -92,6 +24,7 @@
 		</div>
 			<!--头部-->
 			<div class="header" id="header">
+				<div class="nav_blue"></div>
 				<div class="con">
 					<a href="index.html"><img src="img/er.png" /></a>
 					<ul class="nav">
@@ -102,27 +35,7 @@
 						<li><a href="#about_tit">关于我们<span class="tag">about us</span></a></li>						
 					</ul>
 				</div>
-				<!-- /*标题栏鼠标划过特效Js*/ -->
-				<script type="text/javascript">
-					$(".nav li").hover(function(){
-						$(this).css({
-							"font-weight": "bold",
-							"border-bottom": "7px solid #78ddd9",
-							"border-top": "7px solid #FFFFFF",
-							"margin-top":"-7px"
-							// "top":"-7px"
-						})
-						$(this).find(".item").css("font-weight","normal");
-					},function(){
-						$(this).css({
-							"font-weight": "normal",
-							"border-bottom": "none",
-							"border-top": "none",
-							"margin-top":"0px"
-							// "top":"0px"
-						})
-					})
-				</script>
+				
 			</div>
 			<!--公司简介-->
 			<div id="company">
@@ -180,52 +93,51 @@
 				<div class="x_tit">
 					公司项目
 				</div>
-				<a href="#intro"><img src="img/back.png" id="pic" /></a>
 				<div class="x_con">
+					<a href="products.html#showshow">
 					<div class="con_1 con_4">
 						<p class="x_con_tit">转运SaaS平台</p>
 						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
 						<img src="img/y.png" alt="y" />
-						<a href="products.html #showshow">
 						<span class="re_more">
 							Read More	
 							<div class="more" >&gt;</div>
 						</span>
-						</a>
 					</div>
+					</a>
+					<a href="products.html#showshow">
 					<div class="con_2 con_4">
 						<p class="x_con_tit">联通数据中心监控系统</p>
 						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
 						<img src="img/gh.png" alt="y" />
-						<a href="products.html #showshow">
 						<span class="re_more">
 							Read More	
 							<div class="more" >&gt;</div>
 						</span>
-						</a>
 					</div>
+					</a>
+					<a href="products.html#showshow">
 					<div class="con_1 con_4">
 						<p class="x_con_tit">P2P网贷平台</p>
 						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
 						<img src="img/lj.png" alt="y" />
-						<a href="products.html #showshow">
 						<span class="re_more">
 							Read More	
 							<div class="more" >&gt;</div>
-						</span>
-						</a>					
+						</span>				
 					</div>
+					</a>	
+					<a href="products.html#showshow">
 					<div class="con_2 con_4">
 						<p class="x_con_tit">中国教育网络电视台健康台</p>
 						<p class="x_con_fot">天津美好科技有限公司成立于2015年7月,是一家具有新星活力的初创企业。公司专业从事计算机软硬件研发工作，自主研发了多项基于互联网的科技型产品</p>
 						<img src="img/c.png" alt="y" />
-						<a href="products.html #showshow">
 						<span class="re_more">
 							Read More	
 							<div class="more" >&gt;</div>
-						</span>
-						</a>					
+						</span>					
 					</div>
+					</a>
 					<a href="product.html" target="_blank">
 					<div class="more_fot">
 						Read More
@@ -246,187 +158,30 @@
 						<div id="icon2" style="background-image: url(img/foo.jpg)"></div>
 						</a>
 					</div> -->
+					<a href="product.html#showshow">
 					<div class="cp_show cp_show1">
-						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<p class="cp_more2">Read More</p>
 						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
-						</a>
 					</div>
 					<div class="cp_show cp_show2">
-						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<p class="cp_more2">Read More</p>
 						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
-						</a>
 					</div>
 					<div class="cp_show cp_show3">
-						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<p class="cp_more2">Read More</p>
 						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
-						</a>
 					</div>
 					<div class="cp_show cp_show4">
-						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<p class="cp_more2">Read More</p>
 						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
-						</a>
 					</div>
 					<div class="cp_show cp_show5">
-						<p class="cp_more2"><a href="product.html #showshow">Read More</p>
+						<p class="cp_more2">Read More</p>
 						<div class="icon9" style="background-image: url(img/foo.jpg)"></div>
-						</a
 					</div>
+					</a>
 				</div>
-				<!--js控制鼠标经过-->
-				<script type="text/javascript">
-					$(function(){
-						$(".pic_first").hover(function(){
-							$("#cp_more").show().css("left","65px");
-							$("#icon2").show().css("left","95px");
-							$(".pic_first").css({"width":"22%",
-							"height":"210px",
-							"box-shadow":"0 10px 12px #000",
-							"margin-left":"160px"});
-						},function(){
-							$("#cp_more,#icon2").hide();
-							$(".pic_first").css({"width":"18%",
-							"height":"180px",
-							"box-shadow":"none",
-							"margin-left":"180px"});
-						})
-						// show1特效
-						$(".cp_show1").hover(function(){
-							$(this).find(".cp_more2").show().css("left","65px");
-							$(this).find(".icon9").show().css("left","95px");
-							$(this).css({"background":"url(img/pic2.png) top",
-								"background-repeat": "no-repeat",
-								"background-size":"100% 100%",
-								"box-shadow":"0 10px 12px #000",
-								"width":"22%",
-								"height":"210px",
-								 "left": "210px",
-								 "background-color": "#78DDD9",
-								 "z-index":999
-							})
-						},function(){
-							$(this).find(".cp_more2,.icon9").hide();
-							$(this).css({
-								"width":"18%",
-								"height":"180px",	
-								"left": "230px",
-								"background":"url(img/sh.png) center",
-								"box-shadow":"none",
-								"background-size": "100% 100%",
-								"background-repeat": "no-repeat",
-								"background-color": "#78DDD9",
-								"z-index":1
-							})
-						})
-						// show2特效
-						$(".cp_show2").hover(function(){
-							$(this).find(".cp_more2").show().css("left","70px");
-							$(this).find(".icon9").show().css("left","95px");
-							$(this).css({"background":"url(img/pic4.png) center",
-								"background-repeat": "no-repeat",
-								"background-size":"100% 100%",
-								"box-shadow":"0 10px 12px #000",
-								"width":"22%",
-								"height":"210px",
-								 "right": "210px",
-								 "z-index":999
-							})
-						},function(){
-							$(this).find(".cp_more2,.icon9").hide();
-							$(this).css({
-								"width":"18%",
-								"height":"180px",	
-								"right": "230px",
-								"background":"url(img/gf.png) center",
-								"box-shadow":"none",
-								"background-size": "50% 60%",
-								"background-repeat": "no-repeat",
-								"background-color": "#78DDD9",
-								"z-index":1
-							})
-						})
-						// show3特效
-						$(".cp_show3").hover(function(){
-							$(this).find(".cp_more2").show().css("left","65px");
-							$(this).find(".icon9").show().css("left","95px");
-							$(this).css({"background":"url(img/pic1.png) center",
-								"background-repeat": "no-repeat",
-								"background-size":"100% 100%",
-								"box-shadow":"0 10px 12px #000",
-								"width":"22%",
-								"height":"210px",
-								 "left": "30px",
-								 "z-index":999
-							})
-						},function(){
-							$(this).find(".cp_more2,.icon9").hide();
-							$(this).css({
-								"width":"18%",
-								"height":"180px",	
-								"left": "50px",
-								"background":"url(img/dfe.png) center",
-								"box-shadow":"none",
-								"background-size": "60% 60%",
-								"background-repeat": "no-repeat",
-								"background-color": "#78DDD9",
-								"z-index":1
-							})
-						})
-						// show4特效
-						$(".cp_show4").hover(function(){
-							$(this).find(".cp_more2").show().css("left","65px");
-							$(this).find(".icon9").show().css("left","95px");
-							$(this).css({"background":"url(img/pic3.png) center",
-								"background-repeat": "no-repeat",
-								"background-size":"100% 100%",
-								"box-shadow":"0 10px 12px #000",
-								"width":"22%",
-								"height":"210px",
-								 "left": "390px",
-								 "z-index":999
-							})
-						},function(){
-							$(this).find(".cp_more2,.icon9").hide();
-							$(this).css({
-								"width":"18%",
-								"height":"180px",	
-								"left": "410px",
-								"background":"url(img/gdd.png) center",
-								"box-shadow":"none",
-								"background-size": "90%",
-								"background-repeat": "no-repeat",
-								"background-color": "#78DDD9",
-								"z-index":1
-							})
-						})
-						// show5特效
-						$(".cp_show5").hover(function(){
-							$(this).find(".cp_more2").show().css("left","65px");
-							$(this).find(".icon9").show().css("left","95px");
-							$(this).css({"background":"url(img/pic5.png) center",
-								"background-repeat": "no-repeat",
-								"background-size":"100% 100%",
-								"box-shadow":"0 10px 12px #000",
-								"width":"22%",
-								"height":"210px",
-								 "left": "750px",
-								 "z-index":999
-							})
-						},function(){
-							$(this).find(".cp_more2,.icon9").hide();
-							$(this).css({
-								"width":"18%",
-								"height":"180px",	
-								"left": "770px",
-								"background":"url(img/xs.png) center",
-								"box-shadow":"none",
-								"background-size": "60% 60%",
-								"background-repeat": "no-repeat",
-								"background-color": "#78DDD9",
-								"z-index":1
-							})
-						})
-					})
-				</script>	
+				
 			</div>
 			<!--新闻中心-->
 			<div class="company_new" id="company_new">
@@ -453,6 +208,7 @@
 								<span class="date_l">06<span class="date_r">/04</span></span>
 							</div>
 							<div class="new_list">
+								<a href="news.html#showshow">
 								<p class="l_tit">
 									慕课是大学教育的未来
 								</p>
@@ -461,7 +217,6 @@
 									在这段时间里，斯坦福大学捐赠金额翻倍、以100分的评分位列2015年的QS“毕业生就业力”大学排名榜第一名、
 									两位教授所创COURSERA在线免费课程引发全球（慕课，即大规模开放在线课程）风潮...... 这位校长自身也有很好的学术成绩。
 								</p>
-								<a href="news.html #showshow">
 								<p class="l_more">Read More</p>
 								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
 								</a>
@@ -473,6 +228,7 @@
 								<span class="date_l">08<span class="date_r">/03</span></span>
 							</div>
 							<div class="new_list">
+								<a href="news.html#showshow">
 								<p class="l_tit">
 									美发O2O  <br /> 一个刚需被制造出来了
 								</p>
@@ -482,7 +238,6 @@
 									的平台从美发店移到家中，一个刚需被制造出来了，尽管看起来不很大众。和传统美业O2O以广泛吸纳线下美容机构，
 									用海量选择与各种折扣形成一个促销平台的套路不同。
 								</p>
-								<a href="news.html #showshow">
 								<p class="l_more">Read More</p>
 								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
 								</a>
@@ -494,6 +249,7 @@
 								<span class="date_l">23<span class="date_r">/02</span></span>
 							</div>
 							<div class="new_list">
+								<a href="news.html#showshow">
 								<p class="l_tit">
 									大佬眼中的2016年<br />电商行业发展趋势
 								</p>
@@ -503,7 +259,6 @@
 									2015年，我国网络零售额达到4万亿元，位居世界第一。2016年，电商行业新政频出，这也和
 									整个行业的规模相关。面对这种变化，阿里巴巴、苏宁等电商巨头又是如何看待行业发展方向的呢？
 								</p>
-								<a href="news.html #showshow">
 								<p class="l_more">Read More</p>
 								<div id="icon3" style="background-image: url(img/foo.jpg)"></div>
 								</a>
@@ -543,7 +298,7 @@
 						</p>
 						<p class="yz_text">
 							尊重人才、尊重劳动成果、合理安排工作强度、注重企业和员工的精神健康和身体健康，<br />
-							是我们一贯坚持的用人原则，是我们奉行的用人理念。在市场竞争的同时，我们渴望遇到有理想、有原则、正直健康积极的创业型人才共同成就事业，开创属于自己的天地和梦想。泰克威坚持自主研发，<br />更尊重每一位专业人才的技术权威和个人信仰。
+							是我们一贯坚持的用人原则，是我们奉行的用人理念。在市场竞争的同时，我们渴望遇到有理想、有原则、正直健康积极的创业型人才共同成就事业，开创属于自己的天地和梦想。美好科技坚持自主研发，<br />更尊重每一位专业人才的技术权威和个人信仰。
 						</p>
 						<hr class="line_3" />
 					</div>
@@ -585,19 +340,7 @@
 								<img src="img/foo.jpg"/>
 							</div>
 						</div>
-						<!--js鼠标划过轮播显示-->
-						<script type="text/javascript">
-							var _index=0
-							$(".r_group").hover(function(){
-								$(this).css({"height":"205px","border-bottom":"5px solid #272727"}).siblings().css({"height":"210px","border-bottom":"none"});
-								$(this).children("img").show().parent().siblings().find("img").hide();
-								_index = $(this).index();
-								$(".r_skey_hide").eq(_index).show().siblings(".r_skey_hide").hide();
-							},function(){
-								$(".r_group").css({"height":"210px","border-bottom":"none"});
-								$(this).children("img").hide();
-							})
-						</script>
+						
 						<!--招聘说明-->
 						<div class="r_sm">
 							<div class="r_bg"></div>
@@ -733,15 +476,17 @@
 			<div class="footer">
 				<div class="footer_des">
 					<p class="meihao foot1">美好科技，让世界更美好</p>
-					<p class="meihao foot2">meihao technology,better this world!</p>
+					<p class="meihao foot2">meihao technology,better this world</p>
 					<p class="meihao foot3">天津美好科技有限公司.2016</p>
-					<a href="#intro"><img src="img/back.png" /></a>
+					<p class="meihao foot4">津ICP备16001831号</p>
+					<a href="#intro"><img src="img/back.png" id="icon10" /></a>
 				</div>
 			</div>
 			<hr class="line_4" />
 			<!-- 回到顶部 -->
 		    <div id="gotop">
-		        <img src="img/gotop.png" width="30" height="30" alt="回到顶部"  />
+		        <img src="img/zhiding2.png" width="45" height="45" alt="回到顶部" id="top_top" />
+		        <!-- <img src="img/zhiding2.png" width="30" height="30" alt="回到顶部"  style="display:none" id="top_top"/> -->
 		    </div>
 		    <!-- 回到顶部JS -->
 		    <script type="text/javascript">
@@ -749,7 +494,7 @@
 		        //绑定页面滚动事件
 		       $(window).scroll(function(){
 		       var len = $(this).scrollTop();
-		           if(len>=300){
+		           if(len>=200){
 		            //显示回到顶部按钮
 		             $("#gotop").show();
 		           }else {
@@ -761,12 +506,26 @@
 		       $("#gotop").click(function(){
 		            $('body,html').stop().animate({ scrollTop: 0 },500)
 		       })
-		       $("#gotop").hover(function(){
-		            $(this).css("background","#78DDD9");
-		       },function(){
-		            $(this).css("background","none");
-		       })
+		       // $("#gotop").hover(function(){
+		       //      $(this).css("background","#FFFFFF");	
+		       // },function(){
+		       //      $(this).css("background","none");
+		       // })
 		    })
+
+		    $(window).scroll(function(){
+		    	// $("#intro").hide();
+		    	// $(".header").css({"position":"fixed"});
+		    	// $(".nav_blue").show();
+		    	var offset =$("#top_top").offset().top;
+		    	if(offset>10&&offset<=1240||offset>2046&&offset<2680||offset>=4200&&offset<=4770||offset>4900&&offset<=5100||offset>6000&&offset<=6200){
+		    		$("#top_top").attr("src","img/zhiding.png");
+		    	}else{
+		    		if(offset>1240&&offset<=2046||offset>2680&&offset<4200||offset>4770&&offset<=4900||offset>5100||offset<=6000){
+		    			$("#top_top").attr("src","img/zhiding2.png");
+		    		}
+		    	}
+		    })		    
 		    </script>
 	</body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 	<head>
 		<meta charset="utf-8" />
@@ -7,25 +7,9 @@
 		<title>天津美好科技有限公司</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/news.css" />
-		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
 		<script async src="http://c.cnzz.com/core.php"></script>
-		<!--css-->
-		<style type="text/css">
-			*{
-				margin: 0px;
-				padding: 0px;
-			}
-			#gotop{
-				padding: 10px 10px;
-				display: none;
-			    width: 30px;
-			    height: 30px;
-		   	    cursor: pointer;
-			    position: fixed;
-			    bottom: 20px;
-			    right: 20px;
-			}
-		</style>
 	</head>
 	<body>
 			<!--头部-->
@@ -40,27 +24,7 @@
 						<li><a href="index.html#about_tit">关于我们<span class="tag">about us</span></a></li>						
 					</ul>
 				</div>
-				<!-- /*标题栏鼠标划过特效Js*/ -->
-				<script type="text/javascript">
-					$(".nav li").hover(function(){
-						$(this).css({
-							"font-weight": "bold",
-							"border-bottom": "7px solid #78ddd9",
-							"border-top": "7px solid #FFFFFF",
-							"margin-top":"-7px"
-							// "top":"-7px"
-						})
-						$(this).find(".item").css("font-weight","normal");
-					},function(){
-						$(this).css({
-							"font-weight": "normal",
-							"border-bottom": "none",
-							"border-top": "none",
-							"margin-top":"0px"
-							// "top":"0px"
-						})
-					})
-				</script>
+
 			</div>
 			<!--新闻中心-->
 			<div class="news">
@@ -113,53 +77,7 @@
 						<div class="pic_left"></div>
 						<div class="pic_right"></div>
 					</div>
-				<script type="text/javascript">
-					
-				var index = -1 ;
-				//内容轮播
-				// function lunbo(){
-				// 	$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
-				// 	$(".test").eq(index).show().siblings(".test").hide();
-				// 	$(".p_tit").eq(index).show().siblings(".p_tit").hide();
-				// }
-
-				// 下一页
-				function NextPic()
-					{	
-						if(index>3)
-						{
-							$(".pic_right").css("background-image","url(img/r_cc.png)");
-							$(".pic_left").css("background-image","url(img/l_37.png)");
-							index = 3 ;
-						}
-
-						$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
-						$(".test").eq(index).show().siblings(".test").hide();
-						$(".p_tit").eq(index).show().siblings(".p_tit").hide();
-					}
-				$(".pic_right").click(function(){
-					 index++ ;
-					 NextPic();
-					 // lunbo();
-				});
-				function PrvPic()
-					{	
-						if(index<0)
-						{
-							$(".pic_right").css("background-image","url(img/r_37.png)");
-							$(".pic_left").css("background-image","url(img/l_cc.png)");
-							index = 0;
-						}
-						$(".pic_switch").eq(index).addClass("hover").siblings().removeClass("hover");
-						$(".test").eq(index).show().siblings(".test").hide();
-						$(".p_tit").eq(index).show().siblings(".p_tit").hide();
-					}
-				$(".pic_left").click(function(){
-					 index-- ;
-					 PrvPic();
-					 // lunbo();
-				});
-				</script>
+				
 					<!-- 新闻说明 -->
 					<div class="news_txt">
 						<p class="p_tit" style="display:block;">
@@ -189,65 +107,7 @@
 							对于备受瞩目的基因大数据行业，全球领先的云计算服务商阿里云开始抓紧布局。今天，从深圳举办的第十届国际基因组学大会上传来消息，阿里云携手英特尔、华大基因三巨头共同签署战略合作备忘录，宣布启动共建中国乃至亚太地区首个定位精准医疗应用云平台。该消息一经发布，便引起了业界的广泛关注......
 						</div>
 					</div>
-					<!-- 新闻详情JS -->
-					<script type="text/javascript">
-							var _home=0;
-							$(".pic_switch").hover(function(){
-								$(this).addClass("hover");
-								var _home=$(this).index();
-								$(".test").eq(_home).show().siblings(".test").hide();
-								$(".p_tit").eq(_home).show().siblings(".p_tit").hide();
-								$(this).find(".news_tag").show();
-							},function(){
-								$(this).removeClass("hover");
-								$(this).find(".news_tag").hide();
-							})
 
-						$(".switch1").hover(function(){
-							$(this).css({
-								"background-image":"url(img/mn_1.png)",
-								"background-size":"100%",
-							})
-						},function(){
-							$(this).css({
-								"background-image":"url(img/ab_1.png)",
-								"background-size":"100%;"
-							})
-						})
-						$(".switch2").hover(function(){
-							$(this).css({
-								"background-image":"url(img/mn_2.png)",
-								"background-size":"100%"
-							})
-						},function(){
-							$(this).css({
-								"background-image":"url(img/ab_2.png)",
-								"background-size":"100%"
-							})
-						})
-						$(".switch3").hover(function(){
-							$(this).css({
-								"background-image":"url(img/mn_3.png)",
-								"background-size":"100%"
-							})
-						},function(){
-							$(this).css({
-								"background-image":"url(img/ab_3.png)",
-								"background-size":"100%;"
-							})
-						})
-						$(".switch4").hover(function(){
-							$(this).css({
-								"background-image":"url(img/mn_4.png)",
-								"background-size":"100%"
-							})
-						},function(){
-							$(this).css({
-								"background-image":"url(img/ab_4.png)",
-								"background-size":"100%;"
-							})
-						})
-					</script>
 				</div>
 				<div class="news_bg"></div>		
 			</div>	
@@ -256,15 +116,16 @@
 			<div class="footer">
 				<div class="footer_des">
 					<p class="meihao foot1">美好科技，让世界更美好</p>
-					<p class="meihao foot2">meihao technology,better this world!</p>
+					<p class="meihao foot2">meihao technology,better this world</p>
 					<p class="meihao foot3">天津美好科技有限公司.2016</p>
+					<p class="meihao foot4">津ICP备16001831号</p>
 					<a href="#header"><img src="img/back.png" /></a>
 				</div>
 			</div>
 			<hr class="line_4" />
 			<!-- 回到顶部 -->
 		    <div id="gotop">
-		        <img src="img/gotop.png" width="30" height="30" alt="回到顶部"  />
+		        <img src="img/zhiding2.png" width="45" height="45" alt="回到顶部"  id="top_top"/>
 		    </div>
 		    <!-- 回到顶部JS -->
 		    <script type="text/javascript">
@@ -284,12 +145,23 @@
 		       $("#gotop").click(function(){
 		            $('body,html').stop().animate({ scrollTop: 0 },500)
 		       })
-		       $("#gotop").hover(function(){
-		            $(this).css("background","#78DDD9");
-		       },function(){
-		            $(this).css("background","none");
+		       // $("#gotop").hover(function(){
+		       //      $(this).css("background","#78DDD9");
+		       // },function(){
+		       //      $(this).css("background","none");
+		       // })
 		       })
-		    })
+
+		    $(window).scroll(function(){
+		    	var offset =$("#top_top").offset().top;
+		    	if(offset>10&&offset<=1040||offset>1250){
+		    		$("#top_top").attr("src","img/zhiding2.png");
+		    	}else{
+		    		if(offset>1040&&offset<=1250){
+		    			$("#top_top").attr("src","img/zhiding.png")
+		    		}
+		    	}
+		    })	
 		    </script>
 	</body>
 </html>
