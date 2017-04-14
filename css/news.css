@@ -14,11 +14,10 @@
 .news_des{
 	position: absolute;
 	top: 40px;
-	left: 180px;
+	left: 13%;
 	width: 74%;
 	height: 100px;
 	margin: 0px auto;
-	/*background: #3da;*/
 }
 .news_tit{
 	font-family: "微软雅黑";
@@ -145,8 +144,7 @@
 	left: -70px;
 	width: 5%;
 	height: 64%;
-	background-image: url(../img/l_cc.png);
-	background-color: #78ddd9;
+	background: url(../img/l_cc.png) #78ddd9 no-repeat;
 }
 .pic_right{
 	position: absolute;
@@ -154,8 +152,7 @@
 	right: -70px;
 	width: 5%;
 	height: 64%;
-	background: url(../img/r_37.png);
-	background-color: #78ddd9;
+	background: url(../img/r_37.png) #78ddd9 no-repeat;
 }
 .news_bg{
 	background: #78ddd9;

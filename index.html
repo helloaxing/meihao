@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/preventF12.js"></script>
 		<!-- 兼容各个浏览器窗口第一屏图片宽高度 -->
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -18,7 +19,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body oncontextmenu='return false'>
 		<div id="intro">
 			<a href="#header"><img src="img/bottom.png"/ id="imger"></a>
 		</div>
@@ -90,10 +91,10 @@
 			</div>			
 			<!--公司项目-->
 			<div class="company_xm" id="company_xm">
-				<div class="x_tit">
-					公司项目
-				</div>
 				<div class="x_con">
+					<div class="x_tit">
+						公司项目
+					</div>
 					<a href="products.html#showshow">
 					<div class="con_1 con_4">
 						<p class="x_con_tit">转运SaaS平台</p>
@@ -503,22 +504,14 @@
 		       $("#gotop").click(function(){
 		            $('body,html').stop().animate({ scrollTop: 0 },500)
 		       })
-		       // $("#gotop").hover(function(){
-		       //      $(this).css("background","#FFFFFF");	
-		       // },function(){
-		       //      $(this).css("background","none");
-		       // })
 		    })
 
 		    $(window).scroll(function(){
-		    	// $("#intro").hide();
-		    	// $(".header").css({"position":"fixed"});
-		    	// $(".nav_blue").show();
 		    	var offset =$("#top_top").offset().top;
-		    	if(offset>10&&offset<=1240||offset>2046&&offset<2680||offset>=4200&&offset<=4770||offset>4900&&offset<=5100||offset>6000&&offset<=6200){
+		    	if(offset>10&&offset<=1210||offset>2046&&offset<2630||offset>=4100&&offset<=4680||offset>4820&&offset<=5015||offset>5935&&offset<=6120){
 		    		$("#top_top").attr("src","img/zhiding.png");
 		    	}else{
-		    		if(offset>1240&&offset<=2046||offset>2680&&offset<4200||offset>4770&&offset<=4900||offset>5100||offset<=6000){
+		    		if(offset>1100&&offset<=2046||offset>2635&&offset<4100||offset>4685&&offset<=4810||offset>5060||offset<=5930){
 		    			$("#top_top").attr("src","img/zhiding2.png");
 		    		}
 		    	}

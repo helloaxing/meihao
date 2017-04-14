@@ -44,18 +44,18 @@ $(function(){
 			"background-repeat": "no-repeat",
 			"background-size":"100% 100%",
 			"box-shadow":"0 10px 12px #000",
-			"width":"22%",
+			"width":"220px",
 			"height":"210px",
-			 "left": "210px",
+			 "left": "21%",
 			 "background-color": "#78DDD9",
 			 "z-index":9
 		})
 	},function(){
 		$(this).find(".cp_more2,.icon9").hide();
 		$(this).css({
-			"width":"18%",
+			"width":"180px",
 			"height":"180px",	
-			"left": "230px",
+			"left": "23%",
 			"background":"url(img/sh.png) center",
 			"box-shadow":"none",
 			"background-size": "100% 100%",
@@ -72,17 +72,17 @@ $(function(){
 			"background-repeat": "no-repeat",
 			"background-size":"100% 100%",
 			"box-shadow":"0 10px 12px #000",
-			"width":"22%",
+			"width":"220px",
 			"height":"210px",
-			 "left": "570px",
+			 "right": "21%",
 			 "z-index":9
 		})
 	},function(){
 		$(this).find(".cp_more2,.icon9").hide();
 		$(this).css({
-			"width":"18%",
+			"width":"180px",
 			"height":"180px",	
-			"left": "590px",
+			"right": "23%",
 			"background":"url(img/gf.png) center",
 			"box-shadow":"none",
 			"background-size": "50% 60%",
@@ -99,17 +99,17 @@ $(function(){
 			"background-repeat": "no-repeat",
 			"background-size":"100% 100%",
 			"box-shadow":"0 10px 12px #000",
-			"width":"22%",
+			"width":"220px",
 			"height":"210px",
-			 "left": "30px",
+			 "left": "3%",
 			 "z-index":9
 		})
 	},function(){
 		$(this).find(".cp_more2,.icon9").hide();
 		$(this).css({
-			"width":"18%",
+			"width":"180px",
 			"height":"180px",	
-			"left": "50px",
+			"left": "5%",
 			"background":"url(img/dfe.png) center",
 			"box-shadow":"none",
 			"background-size": "60% 60%",
@@ -126,17 +126,17 @@ $(function(){
 			"background-repeat": "no-repeat",
 			"background-size":"100% 100%",
 			"box-shadow":"0 10px 12px #000",
-			"width":"22%",
+			"width":"220px",
 			"height":"210px",
-			 "left": "390px",
+			 "left": "39%",
 			 "z-index":9
 		})
 	},function(){
 		$(this).find(".cp_more2,.icon9").hide();
 		$(this).css({
-			"width":"18%",
+			"width":"180px",
 			"height":"180px",	
-			"left": "410px",
+			"left": "41%",
 			"background":"url(img/gdd.png) center",
 			"box-shadow":"none",
 			"background-size": "90%",
@@ -153,17 +153,17 @@ $(function(){
 			"background-repeat": "no-repeat",
 			"background-size":"100% 100%",
 			"box-shadow":"0 10px 12px #000",
-			"width":"22%",
+			"width":"220px",
 			"height":"210px",
-			 "left": "750px",
+			 "right": "3%",
 			 "z-index":9
 		})
 	},function(){
 		$(this).find(".cp_more2,.icon9").hide();
 		$(this).css({
-			"width":"18%",
+			"width":"180px",
 			"height":"180px",	
-			"left": "770px",
+			"right": "5%",
 			"background":"url(img/xs.png) center",
 			"box-shadow":"none",
 			"background-size": "60% 60%",
